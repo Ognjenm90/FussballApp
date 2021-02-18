@@ -1,0 +1,15 @@
+<div class="container">
+  <h3 mat-dialog-title *ngIf="flag==1">Nationalität hinzufügen</h3>
+  <h3 mat-dialog-title *ngIf="flag==2">Nationalität ändern</h3>
+  <h3 mat-dialog-title *ngIf="flag==3">Nationalität löschen</h3>
+  <form class="mat-dialog-content" #formControl="ngForm">
+    <div class="form">
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="data.name" name="name" >
+      </mat-form-field>
+    </div>
+
+    <button mat-button *ngIf="flag==1"  [mat-dialog-close]="1" (click)="add()" >Hinzufügen</button>
+    <button mat-button *ngIf="flag==2"  [mat-dialog-close]="1" (click)="update()" >Ändern</button>
+    <button mat-button *ngIf="flag==3"  [mat-dialog-close]="1" (click)="delete(data)">Loschen</button>
+    <button mat-button (click)="cancel()">Abrechen</button>

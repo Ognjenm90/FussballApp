@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mat-form-field {
+    font-size: 14px;
+    flex-grow: 1;
+    margin-top: 8px;
+}
+
+
+
+.mat-cell:nth-child(1),
+.mat-header-cell:nth-child(1){
+    padding-left: 15px;
+    padding-right: 150px;
+    flex: 0 0 5%;
+}
+
+.mat-cell:nth-child(2),
+.mat-header-cell:nth-child(2){
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 40%;
+}
+
+.mat-cell:nth-child(3),
+.mat-header-cell:nth-child(3){
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 20%;
+}
+
+.mat-cell:nth-child(4),
+.mat-header-cell:nth-child(4){
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 15%;
+}
+
+.title-center {
+    margin: 0 auto;
+}
